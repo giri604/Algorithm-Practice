@@ -1,0 +1,7 @@
+F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.exe.config
+F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.exe
+F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.pdb
+F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csprojAssemblyReference.cache
+F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csproj.CoreCompileInputs.cache
+F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.exe
+F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.pdb
