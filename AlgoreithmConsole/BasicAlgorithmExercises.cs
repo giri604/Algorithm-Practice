@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace AlgoreithmConsole
 {
@@ -275,6 +276,92 @@ namespace AlgoreithmConsole
                 result += str.Substring(0, i + 1);
             }
             return result;
+        }
+
+        /// <summary>
+        /// program to count a substring of length 2 appears in a given string and also as the last 2 characters of the string. 
+        /// Do not count the end substring.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns>int</returns>
+        public static int Question31(string str)
+        {
+            string lastTwoCharsString = str.Substring(str.Length - 2);
+            int count = 0;
+            for(int i = 0; i < str.Length - 2; i++)
+            {
+                if(str.Substring(i, 2).Equals(lastTwoCharsString))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        /// <summary>
+        /// Program to check a specified number is present in a given array of integers.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="stringToCheck"></param>
+        /// <returns>bool</returns>
+        public static bool Question32(string str, string stringToCheck)
+        {
+            string[] strArray = str.Split(',');
+
+            return strArray.Contains(stringToCheck) ? true : false;
+        }
+
+        /// <summary>
+        /// Program to check if one of the first 4 elements in an array of integers is equal to a given element.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <param name="n"></param>
+        /// <returns>bool</returns>
+        public static bool Question33(int[] numbers, int n)
+        {
+            int[] filteredNumbers = numbers.Take(4).ToArray();
+            return filteredNumbers.Contains(n) ? true : false;
+        }
+
+        /// <summary>
+        /// Program to check whether the sequence of numbers 1, 2, 3 appears in a given array of integers somewhere.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>bool</returns>
+        public static bool Question34(int[] numbers)
+        {
+          for(int i = 0; i < numbers.Length - 2; i++)
+            {
+                if ((numbers[i] == 1) && (numbers[i + 1] == 2) && (numbers[i + 2] == 3))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Program to compare two given strings and return the number of the positions where they contain the same length 2 substring.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="position"></param>
+        /// <returns></returns>
+        public static int Question35(string str1, string str2)
+        {
+            int count = 0;
+            for(int i = 0; i < str1.Length - 1; i++)
+            {
+                string firstString = str1.Substring(i, 2);
+                for(int j = 0; j < str2.Length - 1; j++)
+                {
+                    string secondString = str2.Substring(j, 2);
+                    if (firstString.Equals(secondString))
+                    {
+                        count++;
+                    }
+                }
+            }
+            return count;
         }
     }
 }

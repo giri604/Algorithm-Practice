@@ -22,10 +22,15 @@ namespace AlgoreithmConsole
             //int b = Convert.ToInt32(Console.ReadLine());
             //Console.Write("Enter the 3rd int value: ");
             //int c = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the String value: ");
-            string str = Console.ReadLine();
+            Console.Write("Enter the String 1 value: ");
+            string str1 = Console.ReadLine();
+            Console.Write("Enter the String 2 value: ");
+            string str2 = Console.ReadLine();
             //int position = Convert.ToInt32(Console.ReadLine());
-
+            //Console.Write("Enter the firts numbers separated by white comma: ");
+            //int[] numbers1 = Array.ConvertAll(Console.ReadLine().Trim().Split(','), Convert.ToInt32);
+            //Console.Write("Enter the number n: ");
+            //int n = int.Parse(Console.ReadLine());
 
             //Console.WriteLine("1st Answer: {0}", BasicAlgorithmExercises.Question1(a, b));
             //Console.WriteLine("2nd Answer: {0}", BasicAlgorithmExercises.Question2(a));
@@ -43,9 +48,12 @@ namespace AlgoreithmConsole
             //Console.WriteLine("27th Answer: {0}", BasicAlgorithmExercises.Question27(str));
             //Console.WriteLine("28th Answer: {0}", BasicAlgorithmExercises.Question28(str));
             //Console.WriteLine("29th Answer: {0}", BasicAlgorithmExercises.Question29(str));
-            Console.WriteLine("30th Answer: {0}", BasicAlgorithmExercises.Question30(str));
-
-
+            //Console.WriteLine("30th Answer: {0}", BasicAlgorithmExercises.Question30(str));
+            //Console.WriteLine("31th Answer: {0}", BasicAlgorithmExercises.Question31(str));
+            //Console.WriteLine("32th Answer: {0}", BasicAlgorithmExercises.Question32(str, Convert.ToString(position)));
+            //Console.WriteLine("33rd Answer: {0}", BasicAlgorithmExercises.Question33(numbers, n));
+            //Console.WriteLine("34th Answer: {0}", BasicAlgorithmExercises.Question34(numbers));
+            Console.WriteLine("35th Answer: {0}", BasicAlgorithmExercises.Question35(str1, str2));
 
 
             Console.ReadKey();

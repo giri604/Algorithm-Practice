@@ -5,3 +5,10 @@ F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.c
 F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csproj.CoreCompileInputs.cache
 F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.exe
 F:\Practice\AlgoreithmConsoleApp\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.pdb
+F:\Practice\Algorithm-Practice\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.exe.config
+F:\Practice\Algorithm-Practice\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.exe
+F:\Practice\Algorithm-Practice\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.pdb
+F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csprojAssemblyReference.cache
+F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csproj.CoreCompileInputs.cache
+F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.exe
+F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.pdb
