@@ -288,9 +288,9 @@ namespace AlgoreithmConsole
         {
             string lastTwoCharsString = str.Substring(str.Length - 2);
             int count = 0;
-            for(int i = 0; i < str.Length - 2; i++)
+            for (int i = 0; i < str.Length - 2; i++)
             {
-                if(str.Substring(i, 2).Equals(lastTwoCharsString))
+                if (str.Substring(i, 2).Equals(lastTwoCharsString))
                 {
                     count++;
                 }
@@ -330,7 +330,7 @@ namespace AlgoreithmConsole
         /// <returns>bool</returns>
         public static bool Question34(int[] numbers)
         {
-          for(int i = 0; i < numbers.Length - 2; i++)
+            for (int i = 0; i < numbers.Length - 2; i++)
             {
                 if ((numbers[i] == 1) && (numbers[i + 1] == 2) && (numbers[i + 2] == 3))
                 {
@@ -349,10 +349,10 @@ namespace AlgoreithmConsole
         public static int Question35(string str1, string str2)
         {
             int count = 0;
-            for(int i = 0; i < str1.Length - 1; i++)
+            for (int i = 0; i < str1.Length - 1; i++)
             {
                 string firstString = str1.Substring(i, 2);
-                for(int j = 0; j < str2.Length - 1; j++)
+                for (int j = 0; j < str2.Length - 1; j++)
                 {
                     string secondString = str2.Substring(j, 2);
                     if (firstString.Equals(secondString))
@@ -363,5 +363,95 @@ namespace AlgoreithmConsole
             }
             return count;
         }
+
+        /// <summary>
+        /// Program to create a new string from a give string where a specified character have been removed except starting and 
+        /// ending position of the given string.
+        /// </summary>
+        /// <param name="str1"></param>
+        /// <param name="str2"></param>
+        /// <returns>string</returns>
+        public static string Question36(string str1, char char1)
+        {
+            string filteredString = str1.Substring(1, str1.Length - 2);
+
+            if (filteredString.Contains(char1))
+            {
+                filteredString = filteredString.Replace(Convert.ToString(char1), string.Empty);
+            }
+
+            return str1.Substring(0, 1) + filteredString + str1.Substring(str1.Length - 1, 1);
+
+        }
+
+        /// <summary>
+        /// Program to create a new string of the characters at indexes 0,1, 4,5, 8,9 ... from a given string.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns>string</returns>
+        public static string Question37(string str)
+        {
+            //int[] index;
+            string result = string.Empty;
+            for(int i = 0; i < str.Length; i = i + 4)  //photo p-0 h-1 o-2 t-3 o-4 we are skipping index of 2 and 3
+            {
+                int c = i + 2; // index values picker
+                int n = 0; 
+                n += c > str.Length ? 1 : 2; //if string length is inclusive to given index range then take 2 else take 1 i.e last character. 
+                result += str.Substring(i, n);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Program to count the number of two 5's are next to each other in an array of integers. 
+        /// Also count the situation where the second 5 is actually a 6.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>int</returns>
+        public static int Question38(int[] numbers)
+        {
+            int count = 0;
+            for(int i = 0; i < numbers.Length - 1; i++)
+            {
+                if(numbers[i].Equals(5) && (numbers[i + 1].Equals(5) || numbers[i + 1].Equals(6)))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        /// <summary>
+        /// Program to check if a triple is presents in an array of integers or not. 
+        /// If a value appears three times in a row in an array it is called a triple.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>bool</returns>
+        public static bool Question39(int[] numbers)
+        {
+            for(int i = 0; i < numbers.Length - 1; i++)
+            {
+                if(numbers[i].Equals(numbers[i + 1]) && numbers[i].Equals(numbers[i + 2]))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Program to compute the sum of the two given integers. If the sum is in the range 10..20 inclusive return 30.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>int</returns>
+        public static int Question40(int x, int y)
+        {
+            int sum = Math.Abs(x + y);
+            return sum >= 10 && sum <= 20 ? 30 : sum;
+        }
+
+
     }
 }
