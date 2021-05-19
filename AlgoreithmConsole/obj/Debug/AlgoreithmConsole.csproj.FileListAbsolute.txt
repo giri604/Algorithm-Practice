@@ -12,3 +12,10 @@ F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csp
 F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csproj.CoreCompileInputs.cache
 F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.exe
 F:\Practice\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.pdb
+G:\Deepak\GitHub\Algorithm-Practice\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.exe.config
+G:\Deepak\GitHub\Algorithm-Practice\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.exe
+G:\Deepak\GitHub\Algorithm-Practice\AlgoreithmConsole\bin\Debug\AlgoreithmConsole.pdb
+G:\Deepak\GitHub\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csprojAssemblyReference.cache
+G:\Deepak\GitHub\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.csproj.CoreCompileInputs.cache
+G:\Deepak\GitHub\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.exe
+G:\Deepak\GitHub\Algorithm-Practice\AlgoreithmConsole\obj\Debug\AlgoreithmConsole.pdb

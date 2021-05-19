@@ -393,10 +393,10 @@ namespace AlgoreithmConsole
         {
             //int[] index;
             string result = string.Empty;
-            for(int i = 0; i < str.Length; i = i + 4)  //photo p-0 h-1 o-2 t-3 o-4 we are skipping index of 2 and 3
+            for (int i = 0; i < str.Length; i = i + 4)  //photo p-0 h-1 o-2 t-3 o-4 we are skipping index of 2 and 3
             {
                 int c = i + 2; // index values picker
-                int n = 0; 
+                int n = 0;
                 n += c > str.Length ? 1 : 2; //if string length is inclusive to given index range then take 2 else take 1 i.e last character. 
                 result += str.Substring(i, n);
             }
@@ -412,9 +412,9 @@ namespace AlgoreithmConsole
         public static int Question38(int[] numbers)
         {
             int count = 0;
-            for(int i = 0; i < numbers.Length - 1; i++)
+            for (int i = 0; i < numbers.Length - 1; i++)
             {
-                if(numbers[i].Equals(5) && (numbers[i + 1].Equals(5) || numbers[i + 1].Equals(6)))
+                if (numbers[i].Equals(5) && (numbers[i + 1].Equals(5) || numbers[i + 1].Equals(6)))
                 {
                     count++;
                 }
@@ -430,9 +430,9 @@ namespace AlgoreithmConsole
         /// <returns>bool</returns>
         public static bool Question39(int[] numbers)
         {
-            for(int i = 0; i < numbers.Length - 1; i++)
+            for (int i = 0; i < numbers.Length - 1; i++)
             {
-                if(numbers[i].Equals(numbers[i + 1]) && numbers[i].Equals(numbers[i + 2]))
+                if (numbers[i].Equals(numbers[i + 1]) && numbers[i].Equals(numbers[i + 2]))
                 {
                     return true;
                 }
@@ -452,6 +452,64 @@ namespace AlgoreithmConsole
             return sum >= 10 && sum <= 20 ? 30 : sum;
         }
 
+        /// <summary>
+        /// Program that accept two integers and return true if either one is 5 or their sum or difference is 5.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>bool</returns>
+        public static bool Question41(int x, int y)
+        {
+            return x == 5 || y == 5 || x + y == 5 || Math.Abs(x - y) == 5;
+        }
 
+        /// <summary>
+        /// Program to test if a given non-negative number is a multiple of 13 or it is one more than a multiple of 13.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns>bool</returns>
+        public static bool Question42(int x)
+        {
+            return x % 13 == 0 || x % 13 == 1;
+        }
+
+        /// <summary>
+        /// Program to check if a given non-negative given number is a multiple of 3 or 7, but not both. 
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns>bool</returns>
+        public static bool Question43(int x)
+        {
+            return (x % 3 == 0 && x % 3 != x % 7) || (x % 7 == 0 && x % 3 != x % 7);
+        }
+
+        /// <summary>
+        /// Program to check if a given number is within 2 of a multiple of 10.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns>bool</returns>
+        public static bool Question44(int x) 
+        {
+            return x % 10 <= 2 || x % 10 >= 8; // Need to understad
+        }
+
+        /// <summary>
+        /// Program to compute the sum of the two given integers. If one of the given integer value is 
+        /// in the range 10..20 inclusive return 18.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+        public static int Question45(int x, int y)
+        {
+            if((x >= 10 && x <= 20) || (y >= 10 && y <= 20))
+            {
+                return 18;
+            }
+            else
+            {
+                return x + y;
+            }
+        }
     }
 }

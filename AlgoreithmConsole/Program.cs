@@ -60,7 +60,11 @@ namespace AlgoreithmConsole
             //Console.WriteLine("37th Answer: {0}", BasicAlgorithmExercises.Question37(str1));
             //Console.WriteLine("38th Answer: {0}", BasicAlgorithmExercises.Question38(numbers1));
             // Console.WriteLine("39th Answer: {0}", BasicAlgorithmExercises.Question39(numbers1));
-            Console.WriteLine("40th Answer: {0}", BasicAlgorithmExercises.Question40(a, b));
+            //Console.WriteLine("40th Answer: {0}", BasicAlgorithmExercises.Question40(a, b));
+            //Console.WriteLine("41st Answer: {0}", BasicAlgorithmExercises.Question41(a, b));
+            //Console.WriteLine("42nd Answer: {0}", BasicAlgorithmExercises.Question42(a));
+            //Console.WriteLine("43rd Answer: {0}", BasicAlgorithmExercises.Question43(a));
+            Console.WriteLine("45th Answer: {0}", BasicAlgorithmExercises.Question45(a, b));
 
 
 
