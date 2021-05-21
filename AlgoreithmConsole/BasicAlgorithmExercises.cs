@@ -511,5 +511,58 @@ namespace AlgoreithmConsole
                 return x + y;
             }
         }
+
+        /// <summary>
+        /// program to check if three given numbers are in strict increasing order, such as 4 7 15, or 45, 56, 67, 
+        /// but not 4 ,5, 8 or 6, 6, 8.
+        /// However,if a fourth parameter is true, equality is allowed, such as 6, 6, 8 or 7, 7, 7.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="z"></param>
+        /// <returns></returns>
+        public static bool Question49(int x, int y, int z, bool flag)
+        {
+            if (flag)
+            { 
+                if(x <= y & y <= x)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                if (x < y && y < z) //(x > y > z if so then && x != y + 1) else (x > y && y > z && x != y +1) 
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Program to check if two or more non-negative given integers have the same rightmost digit.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns></returns>
+        public static bool Question50(int[] numbers)
+        {
+            bool result = false;
+            for(int i = 0; i < numbers.Length - 1; i++)
+            {
+                if(numbers[i] % 10 == numbers[i + 1] % 10)
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
     }
-}
+}   
