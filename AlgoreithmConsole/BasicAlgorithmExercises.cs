@@ -564,5 +564,105 @@ namespace AlgoreithmConsole
             }
             return result;
         }
+
+        /// <summary>
+        /// Program to check three given integers and return true if one of them is 20 or more less than one of the others.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="z"></param>
+        /// <returns>bool</returns>
+        public static bool Question51(int x, int y, int z)
+        {
+            if(x >= 20 || y >= 20 || z >= 20)
+            {
+                return x < y && y < z ? true : false;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Program to find the larger from two given integers. However if the two integers have the same remainder when divided by 7, 
+        /// then the return the smaller integer. If the two integers are the same, return 0.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>int</returns>
+        public static int Question52(int x, int y)
+        { 
+            if( x == y)
+            {
+                return 0;
+            }
+            else if(x % 7 == y % 7)
+            {
+                return x < y ? x : y;
+            }
+            else
+            {
+                return x > y ? x : y;
+            }
+        }
+
+        /// <summary>
+        /// Program to check two given integers, each in the range 10..99. Return true if a digit appears in both numbers, 
+        /// such as the 3 in 13 and 33.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+        public static bool Question53(int x, int y)
+        {
+            if(x >= 10 && x <= 99 && y >= 10 && y <= 99)
+            {
+                return x % 10 == y % 10 ? true : false;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// program to compute the sum of two given non-negative integers x and y as long as 
+        /// the sum has the same number of digits as x. If the sum has more digits than x then return x without y.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>int</returns>
+        public static int Question54(int x, int y)
+        {
+            int sum = x + y;
+            return sum.ToString().Length > x.ToString().Length ? x : sum;
+        }
+
+        /// <summary>
+        /// Program to compute the sum of three given integers. If the two values are same return the third value.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="z"></param>
+        /// <returns>int</returns>
+        public static int Question55(int x, int y, int z)
+        {
+            int sum = Math.Abs(x + y + z);
+           if(x == y && y == z)
+            {
+                return 0;
+            }
+           else if(x == y)
+            {
+                return z;
+            }
+           else if(y == z)
+            {
+                return x;
+            }
+           else if(x == z)
+            {
+                return y;
+            }
+           else
+            {
+                return sum;
+            }
+        }
     }
 }   

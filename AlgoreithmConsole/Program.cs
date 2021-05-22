@@ -16,12 +16,12 @@ namespace AlgoreithmConsole
 
         public void ComputeTwoInt()
         {
-            //Console.Write("Enter the 1st int value: ");
-            //int a = Convert.ToInt32(Console.ReadLine());
-            //Console.Write("Enter the 2nd int value: ");
-            //int b = Convert.ToInt32(Console.ReadLine());
-            //Console.Write("Enter the 3rd int value: ");
-            //int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the 1st int value: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the 2nd int value: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the 3rd int value: ");
+            int c = Convert.ToInt32(Console.ReadLine());
             //Console.Write("Enter the 4rd bool value: ");
             //bool flag = Convert.ToBoolean(Console.ReadLine());
             //Cosole.Write("Enter the String 1 value: ");
@@ -31,8 +31,8 @@ namespace AlgoreithmConsole
             //Console.Write("Enter the char value: ");
             //char char1 = Convert.ToChar(Console.ReadLine());
             //int position = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the firts numbers separated by white comma: ");
-            int[] numbers1 = Array.ConvertAll(Console.ReadLine().Trim().Split(','), Convert.ToInt32);
+            //Console.Write("Enter the firts numbers separated by white comma: ");
+            //int[] numbers1 = Array.ConvertAll(Console.ReadLine().Trim().Split(','), Convert.ToInt32);
             //Console.Write("Enter the number n: ");
             //int n = int.Parse(Console.ReadLine());
 
@@ -68,7 +68,14 @@ namespace AlgoreithmConsole
             //Console.WriteLine("43rd Answer: {0}", BasicAlgorithmExercises.Question43(a));
             //Console.WriteLine("45th Answer: {0}", BasicAlgorithmExercises.Question45(a, b));
             //Console.WriteLine("49th Answer: {0}", BasicAlgorithmExercises.Question49(a, b, c, flag));
-            Console.WriteLine("50th Answer: {0}", BasicAlgorithmExercises.Question50(numbers1));
+            //Console.WriteLine("50th Answer: {0}", BasicAlgorithmExercises.Question50(numbers1));
+            //Console.WriteLine("51th Answer: {0}", BasicAlgorithmExercises.Question51(a, b, c));
+            //Console.WriteLine("52nd Answer: {0}", BasicAlgorithmExercises.Question52(a, b));
+            //Console.WriteLine("53rd Answer: {0}", BasicAlgorithmExercises.Question53(a, b));
+            //Console.WriteLine("54th Answer: {0}", BasicAlgorithmExercises.Question54(a, b));
+            Console.WriteLine("55th Answer: {0}", BasicAlgorithmExercises.Question55(a, b, c));
+
+
 
 
 
