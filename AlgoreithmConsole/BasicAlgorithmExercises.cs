@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace AlgoreithmConsole
@@ -488,7 +489,7 @@ namespace AlgoreithmConsole
         /// </summary>
         /// <param name="x"></param>
         /// <returns>bool</returns>
-        public static bool Question44(int x) 
+        public static bool Question44(int x)
         {
             return x % 10 <= 2 || x % 10 >= 8; // Need to understad
         }
@@ -502,7 +503,7 @@ namespace AlgoreithmConsole
         /// <returns></returns>
         public static int Question45(int x, int y)
         {
-            if((x >= 10 && x <= 20) || (y >= 10 && y <= 20))
+            if ((x >= 10 && x <= 20) || (y >= 10 && y <= 20))
             {
                 return 18;
             }
@@ -524,8 +525,8 @@ namespace AlgoreithmConsole
         public static bool Question49(int x, int y, int z, bool flag)
         {
             if (flag)
-            { 
-                if(x <= y & y <= x)
+            {
+                if (x <= y & y <= x)
                 {
                     return true;
                 }
@@ -555,9 +556,9 @@ namespace AlgoreithmConsole
         public static bool Question50(int[] numbers)
         {
             bool result = false;
-            for(int i = 0; i < numbers.Length - 1; i++)
+            for (int i = 0; i < numbers.Length - 1; i++)
             {
-                if(numbers[i] % 10 == numbers[i + 1] % 10)
+                if (numbers[i] % 10 == numbers[i + 1] % 10)
                 {
                     result = true;
                 }
@@ -574,7 +575,7 @@ namespace AlgoreithmConsole
         /// <returns>bool</returns>
         public static bool Question51(int x, int y, int z)
         {
-            if(x >= 20 || y >= 20 || z >= 20)
+            if (x >= 20 || y >= 20 || z >= 20)
             {
                 return x < y && y < z ? true : false;
             }
@@ -589,12 +590,12 @@ namespace AlgoreithmConsole
         /// <param name="y"></param>
         /// <returns>int</returns>
         public static int Question52(int x, int y)
-        { 
-            if( x == y)
+        {
+            if (x == y)
             {
                 return 0;
             }
-            else if(x % 7 == y % 7)
+            else if (x % 7 == y % 7)
             {
                 return x < y ? x : y;
             }
@@ -613,7 +614,7 @@ namespace AlgoreithmConsole
         /// <returns></returns>
         public static bool Question53(int x, int y)
         {
-            if(x >= 10 && x <= 99 && y >= 10 && y <= 99)
+            if (x >= 10 && x <= 99 && y >= 10 && y <= 99)
             {
                 return x % 10 == y % 10 ? true : false;
             }
@@ -643,26 +644,154 @@ namespace AlgoreithmConsole
         public static int Question55(int x, int y, int z)
         {
             int sum = Math.Abs(x + y + z);
-           if(x == y && y == z)
+            if (x == y && y == z)
             {
                 return 0;
             }
-           else if(x == y)
+            else if (x == y)
             {
                 return z;
             }
-           else if(y == z)
+            else if (y == z)
             {
                 return x;
             }
-           else if(x == z)
+            else if (x == z)
             {
                 return y;
             }
-           else
+            else
             {
                 return sum;
             }
         }
+
+        /// <summary>
+        /// Program to compute the sum of the three integers. If one of the values is 13 then do not count it and its right towards the sum. 
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>int</returns>
+        public static int Question56(int[] numbers)
+        {
+            int sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] == 13)
+                {
+                    break;
+                }
+                else
+                {
+                    sum += numbers[i];
+                }
+            }
+            return sum;
+        }
+
+        /// <summary>
+        /// program to compute the sum of the three given integers. However, if any of the values is 
+        /// in the range 10..20 inclusive then that value counts as 0, except 13 and 17.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>int</returns>
+        public static int Question57(int[] numbers)
+        {
+            int sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] >= 10 && numbers[i] <= 20)
+                {
+                    if (numbers[i].Equals(13) || numbers[i].Equals(17))
+                    {
+                        sum += numbers[i];
+                    }
+                }
+                else
+                {
+                    sum += numbers[i];
+                }
+            }
+            return sum;
+        }
+
+        /// <summary>
+        /// program to check two given integers and return the value whichever value is nearest to 13 without going over. 
+        /// Return 0 if both numbers go over.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>int</returns>
+        public static int Question58(int x, int y)
+        {
+            int result = 0;
+            if (x > 13 && y > 13)
+            {
+                result = 0;
+            }
+            else if (x > y && x <= 13)
+            {
+                result = x;
+            }
+            else if (y > x && y <= 13)
+            {
+                result = y;
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// program to check three given integers (small, medium and large) and return true if the difference between small 
+        /// and medium and the difference between medium and large is same.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>bool</returns>
+        public static bool Question59(int[] numbers)
+        {
+            if (Math.Abs(numbers[0] - numbers[1]) == Math.Abs(numbers[1] - numbers[2]))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// program to insert a given string into middle of the another given string of length 4.
+        /// </summary>
+        /// <param name="str1"></param>
+        /// <param name="str2"></param>
+        /// <returns>string</returns>
+        public static string Question61(string str1, string str2)
+        {
+            int middleIndex = Math.Abs(str1.Length / 2);
+            //var 
+            return str1.Replace(str1, str1.Substring(0, middleIndex) + str2 + str1.Substring(str1.Length - middleIndex));
+        }
+
+        /// <summary>
+        /// Program to create a new string of the first half of a given string of even length.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns>string</returns>
+        public static string Question64(string str)
+        {
+            int evenLenght = Math.Abs(str.Length / 2);
+            return str.Substring(0, evenLenght);
+        }
+
+        /// <summary>
+        /// Program to create a new string without the first and last character of a given string of length at least two.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns>string</returns>
+        public static string Question65(string str)
+        {
+            string result = string.Empty;
+            if (str.Length > 2)
+            {
+                result = str.Substring(1, str.Length - 1);
+            }
+
+            return result;
+        }
     }
-}   
+}
